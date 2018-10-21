@@ -18,10 +18,10 @@ else
 fi
 
 # Pull latest version of docker-app
-docker pull ajeetkhan/docker-app:1.0.3
+docker pull ajeetkhan/docker-app:latest
 
 # Run docker-app
-docker run -d --restart=unless-stopped -p 80:5000 -v /var/run/docker.sock:/var/run/docker.sock  ajeetkhan/docker-app:1.0.3
+docker run -d --restart=unless-stopped -p 80:5000 -v /var/run/docker.sock:/var/run/docker.sock  ajeetkhan/docker-app:latest
 
 # Add ubuntu to docker group
 gpasswd -a ubuntu docker
